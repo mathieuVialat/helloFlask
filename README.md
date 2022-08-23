@@ -1,7 +1,7 @@
 # helloFlask
 Création d'une appli avec Flask
 
-###Installation et utilisation Pyenv:
+### Installation et utilisation Pyenv:
 Installation des dépendances:
  
  $ sudo apt-get update; sudo apt-get install make build-essential libssl-dev zlib1g-dev \
@@ -12,7 +12,7 @@ Installation Pyenv:
 
  $ curl https://pyenv.run | bash
  
-####(Ne pas oublier les lignes à ajouter et à commenter dans le .Bashrc)
+#### (Ne pas oublier les lignes à ajouter et à commenter dans le .Bashrc)
 
 Utilisation Pyenv:
 pyenv versions -> liste les environnements créés
@@ -22,3 +22,19 @@ pyenv activate [environnement] -> passer dans un environnement
 pyenv virtualenv [version] [environnement] -> spécifier une version de python pour un environnement
 pyenv global [version] -> initialise une version python comme version par défaut globale
 pyenv local [version] -> initialise une version python comme version par défaut locale
+
+
+### Installation et utilisation de Poetry:
+
+commande installation:
+
+$ curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
+
+création package:
+
+$ poetry new [pack name] -> crée un nouveau package
+$ touch [pack name]/[script_name].py -> crée un fichier avec le script à exécuter
+
+$ poetry install -> installe le package avec poetry
+$ poetry build -> crée les fichiers permettant d'exporter le package
+
