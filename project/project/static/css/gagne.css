@@ -1,0 +1,13 @@
+body {
+  padding-top: 50px;
+  background-color: pink;
+  text-decoration-line: overline underline;
+  text-decoration-color: purple;
+  text-decoration-style: wavy;
+  font-family: 'Rubik Puddles';font-size: 30px;
+}
+.top-pad {
+  padding: 40px 15px;
+  text-align: center;
+}
+

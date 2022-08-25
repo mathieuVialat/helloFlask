@@ -1,0 +1,23 @@
+body {
+  padding-top: 50px;
+  background-color: black;
+  text-decoration-line: overline underline;
+  text-decoration-color: red;
+  text-decoration-style: double;
+  font-family: 'Metal Mania';font-size: 30px;
+}
+.top-pad {
+  padding: 40px 15px;
+  text-align: center;
+}
+input[type=submit] {
+  background-color: red; 
+  border: white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-family: 'Metal Mania';
+}

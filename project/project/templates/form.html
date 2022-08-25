@@ -1,0 +1,32 @@
+<body bgcolor=”#800000">
+<!-- <form>
+  <input formaction="/form.html"  type="radio" id="html" name="reponse" value="Oui">
+  <label for="Oui">Oui</label><br>
+  <input formaction="/form.html"  type="radio" id="css" name="reponse" value="Non">
+  <label for="Non">Non</label><br>
+  <input formaction="/form.html"  type="radio" id="javascript" name="reponse" value="Sbradarajan">
+  <label for="Sbradarajan">Sbradarajan</label><br> !-->
+<link href='https://fonts.googleapis.com/css?family=Metal Mania' rel='stylesheet'>
+<link href="{{ url_for('static', filename='css/form.css') }}" rel="stylesheet">
+
+<CENTER><img src="https://risibank.fr/cache/medias/0/5/514/51437/full.png" alt="" width = 800 height = 500> 
+<p  style="color:white; font-family: Metal Mania; font-size: 30px"> Quel est ton film d'horreur préféré?</p>
+ <form method="post">
+  <label for="filmname" style = color:white>Ta réponse:</label><br>
+  <input type="text" name="filmname" value="{{ request.form['filmname'] }}"><br><br>
+  <input type="submit" value="Validez"><br><br>
+  <input formaction='/about' type="submit" formmethod='get' value="Tu es sûr?">
+</form> 
+
+<!--
+<form action="/about" method="get">
+  <input type="submit" value="Oui">
+</form> 
+<form action="/Non" method="get">
+  <input type="submit" value="Non">
+</form> 
+<form action="/Sbradarajan" method="get">
+  <input type="submit" value="Sbradarajan">
+!-->
+
+</form> 

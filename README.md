@@ -20,8 +20,8 @@ pyenv install --list -> liste les versions disponibles à installer
 pyenv install [librairie à installée] -> installe la librairie voulue
 pyenv activate [environnement] -> passer dans un environnement
 pyenv virtualenv [version] [environnement] -> spécifier une version de python pour un environnement
-pyenv global [version] -> initialise une version python comme version par défaut globale
-pyenv local [version] -> initialise une version python comme version par défaut locale
+pyenv global [version ou environnement] -> initialise une version python comme version par défaut globale
+pyenv local [version ou environnement] -> initialise une version python comme version par défaut locale
 
 
 ### Installation et utilisation de Poetry:
@@ -32,9 +32,13 @@ $ curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-po
 
 création package:
 
-$ poetry new [pack name] -> crée un nouveau package
+$ poetry new [project name] -> crée un nouveau projet
 $ touch [pack name]/[script_name].py -> crée un fichier avec le script à exécuter
+$ poetry add [packet name] -> ajouter un paquet (pandas, flask, ...)
 
 $ poetry install -> installe le package avec poetry
 $ poetry build -> crée les fichiers permettant d'exporter le package
+
+$ poetry shell 
+$ poetry run [python | count| ...)] -> lance la commande python demandée
 
